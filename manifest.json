@@ -3,7 +3,7 @@
 
   "name": "DailyVerse",
   "description": "Daily Bible verses on your start page.",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
