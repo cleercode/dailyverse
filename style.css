@@ -1,3 +1,10 @@
+select, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
 body {
   font: bold 2vmax/1.2 Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
@@ -10,22 +17,33 @@ a {
   text-decoration: none;
 }
 
-.verse {
+#verse {
   font-family: Bitter, Georgia, serif;
   font-size: 2em;
   letter-spacing: 0;
 }
 
-.ref {
+#ref {
   display: block;
   letter-spacing: 0.25em;
   margin-top: 2em;
   text-transform: uppercase;
 }
 
-.credit {
+footer {
   font-size: 0.5em;
   opacity: 0.5;
+  line-height: 1.5;
   position: absolute;
   bottom: 4rem;
+}
+
+select {
+  -webkit-appearance: none;
+  background: none;
+  color: inherit;
+}
+
+select:focus {
+  outline: none;
 }
