@@ -36,9 +36,9 @@ body {
 
 #verse {
   color: rgba(255, 255, 255, 0.75);
-  font-family: Charter, Georgia, serif;
+  font-family: 'Source Serif Pro', Georgia, serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 0;
   line-height: 26px;
   border: 3px solid rgba(0, 0, 0, 0.4);

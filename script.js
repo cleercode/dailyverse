@@ -19,7 +19,6 @@ function write(json) {
   document.getElementById('verse').innerHTML = votd.text.replace('&ldquo;', ''). replace('&rdquo;', '');
   document.getElementById('ref').href = votd.permalink;
   document.getElementById('ref').innerHTML = votd.reference;
-  document.title = votd.reference;
   document.body.setAttribute('class', '');
 };
 
