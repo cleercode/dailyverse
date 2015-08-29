@@ -1,16 +1,15 @@
 var colors = [
-  ['#2ecc71', '#229552'],
-  ['#d96256', '#c0392b'],
-  ['#e95d43', '#d03518'],
-  ['#9daa38', '#6e7727'],
-  ['#3bb183', '#2a7e5d'],
-  ['#ef853f', '#d86112'],
-  ['#13d6e8', '#0e9ca9'],
-  ['#76307e', '#481d4d']
+  '#424851',
+  '#733933',
+  '#575a41',
+  '#34584a',
+  '#a75924',
+  '#32575b',
+  '#443146',
 ];
 var defaultVersion = 47;
 
-function pickColor() {
+function getRandomColor() {
   var random = Math.floor(Math.random() * colors.length);
   return colors[random];
 }
@@ -21,6 +20,7 @@ function write(json) {
   document.getElementById('ref').href = votd.permalink;
   document.getElementById('ref').innerHTML = votd.reference;
   document.title = votd.reference;
+  document.body.setAttribute('class', '');
 };
 
 function loadScript() {
@@ -51,9 +51,8 @@ function setVersion() {
 }
 
 window.onload = function() {
-  var color = pickColor();
-  document.body.style.color = color[0];
-  document.body.style.backgroundColor = color[1];
+  document.body.setAttribute('class', 'loading');
+  document.body.style.backgroundColor = getRandomColor();
   restoreVersion();
   loadScript();
   document.getElementById('version').onchange = setVersion;
